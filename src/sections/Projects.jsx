@@ -10,7 +10,7 @@ function Projects() {
             Interactive comparison of Perceptron and Gradient Descent to show
             why gradient-based learning is effective.
           </p>
-          <p className="text-sm text-blue-400">Machine Learning • Gradient Descent • Perceptron</p>
+          <p className="text-sm text-blue-400">Machine Learning • Gradient Descent • Perceptron • Visualisation</p>
         </div>
       </div>
     </section>
