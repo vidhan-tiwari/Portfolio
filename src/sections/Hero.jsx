@@ -4,7 +4,9 @@ const dynamicWords = [
     "Machine Learning",
     "Deep Learning",
     "Data Science",
-    "Building Systems",
+    "Intelligent Systems",
+    "Generative AI",
+    "Building Systems"
 ]
 
 function Hero() {
