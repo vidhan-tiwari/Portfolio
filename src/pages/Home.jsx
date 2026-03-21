@@ -3,16 +3,18 @@ import Hero from "../sections/Hero"
 import About from "../sections/About"
 import Projects from "../sections/Projects"
 import Contact from "../sections/Contact"
+import Footer from "../components/Footer"
 
 function Home() {
     return (
-        <div className="min-h-screen bg-gray-950 text-white">
+        <main className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-white scroll-smooth">
             <Navbar />
             <Hero />
             <About />
             <Projects />
             <Contact />
-        </div>
+            <Footer />
+        </main>
     )
 }
 
