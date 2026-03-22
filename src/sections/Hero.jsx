@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { motion } from "framer-motion"
 
 const dynamicWords = [
     "Machine Learning",
@@ -43,15 +44,32 @@ function Hero() {
 
     return (
         <section className="flex flex-col items-center justify-center text-center py-32 px-6">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">Hi, I'm Vidhan Tiwari</h1>
-            <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl leading-relaxed">
+            <motion.h1 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-5xl md:text-6xl font-bold mb-4"
+            >
+                Hi, I'm Vidhan Tiwari
+            </motion.h1>
+            <motion.p 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl leading-relaxed"
+            >
                 Aspiring Software / ML Engineer passionate about{" "}
                 <span className="text-blue-400 font-semibold">
                     {text}
                     <span className="animate-pulse">|</span>
                 </span>
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 mb-6">
+            </motion.p>
+            <motion.div 
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="flex flex-wrap justify-center gap-4 mb-6"
+            >
                 <a
                     href="#projects"
                     className="border border-gray-600 hover:border-blue-400 hover:text-blue-400 px-6 py-3 rounded-lg font-semibold transition-colors"
@@ -66,7 +84,7 @@ function Hero() {
                 >
                     View Resume
                 </a>
-            </div>
+            </motion.div>
 
         </section>
 
