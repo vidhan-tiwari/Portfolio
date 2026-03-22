@@ -5,6 +5,7 @@ function Navbar() {
             {/* optional text-blue-400 */}
             <div className="flex gap-6 text-sm font-medium text-blue-400">
                 <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
                 <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
                 <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
             </div>
