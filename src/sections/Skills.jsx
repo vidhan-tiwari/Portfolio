@@ -38,7 +38,7 @@ function Skills() {
     ]
 
     return (
-        <section id="skills" className="py-20 px-8 max-w-5xl mx-auto">
+        <section id="skills" className="py-20 px-8 max-w-6xl mx-auto">
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ function Skills() {
                 Skills
             </motion.h2>
 
-            <motion.div layout className="grid md:grid-cols-3 gap-6">
+            <motion.div layout className="grid md:grid-cols-3 gap-8">
                 {skillGroups.map((group, index) => (
                     <motion.div
                         key={index}
@@ -61,12 +61,14 @@ function Skills() {
                         whileHover={{
                             scale: 1.04,
                             boxShadow: "0px 0px 20px rgba(96, 165, 250, 0.4)",
-                            transition: { duration: 0.2 }
+                            transition: { duration: 0.2 },
                         }}
-                        className="bg-gray-900 border border-gray-800 rounded-xl p-6 shadow-lg"
+                        className="bg-gray-900 border border-gray-800 rounded-xl p-8 shadow-lg overflow-hidden"
                     >
-                        <motion.h3 layout className="text-xl font-semibold mb-4 text-blue-400">{group.title}</motion.h3>
-                        <motion.div layout className="flex flex-wrap gap-2">
+                        <motion.h3 layout className="text-xl font-semibold mb-4 text-blue-400">
+                            {group.title}
+                        </motion.h3>
+                        <motion.div layout className="flex flex-wrap gap-3">
                             {group.skills.map((skill, i) => (
                                 <motion.div
                                     key={i}
@@ -74,21 +76,29 @@ function Skills() {
                                     initial="rest"
                                     whileHover="hover"
                                     animate="rest"
-                                    className="flex items-center px-3 py-1 text-sm rounded-full bg-gray-800 text-gray-300 cursor-pointer overflow-hidden"
+                                    variants={{
+                                        rest: { marginRight: 0, zIndex: 1 },
+                                        hover: { marginRight: -68, zIndex: 10 }
+                                    }}
+                                    transition={{ duration: 0.3 }}
+                                    className="relative flex items-center px-3 py-1 text-sm rounded-full bg-gray-800 text-gray-300 cursor-pointer overflow-hidden min-w-fit"
                                 >
-                                    <motion.span layout>{skill.name}</motion.span>
+                                    <motion.span layout="position">{skill.name}</motion.span>
 
                                     <motion.div
                                         variants={{
                                             rest: { width: 0, opacity: 0, marginLeft: 0 },
-                                            hover: { width: 60, opacity: 1, marginLeft: 8 }
+                                            hover: { width: 60, opacity: 1, marginLeft: 8 },
                                         }}
                                         transition={{ duration: 0.3 }}
-                                        className="flex text-blue-400 text-xs overflow-hidden whitespace-nowrap"
+                                        className="flex text-blue-400 text-xs overflow-hidden whitespace-nowrap flex-shrink-0"
                                         style={{ textShadow: "0 0 8px rgba(21, 44, 250, 0.93)" }}
                                     >
                                         {Array.from({ length: 5 }).map((_, starIdx) => (
-                                            <span key={starIdx} className={starIdx < skill.stars ? "opacity-150" : "opacity-30"}>
+                                            <span
+                                                key={starIdx}
+                                                className={starIdx < skill.stars ? "opacity-100" : "opacity-30"}
+                                            >
                                                 ★
                                             </span>
                                         ))}
