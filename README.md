@@ -1,59 +1,16 @@
-<div align="center">
-  <img src="public/favicon.ico" alt="Logo" width="80" height="80" />
+# React + Vite
 
-  <h1 align="center">Vidhan Tiwari - Personal Portfolio</h1>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-  <p align="center">
-    A modern, sleek, and interactive personal portfolio demonstrating my projects, skills, and experience in <strong>Software Engineering</strong> and <strong>Machine Learning</strong>.
-    <br />
-    <a href="https://github.com/vidhan-tiwari/Portfolio"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="https://github.com/vidhan-tiwari/Portfolio/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/vidhan-tiwari/Portfolio/issues">Request Feature</a>
-  </p>
-</div>
+Currently, two official plugins are available:
 
-<!-- ABOUT THE PROJECT -->
-## 🚀 About The Project
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-This repository contains the source code for my personal portfolio website. It serves as a central hub for my professional identity, showcasing my journey, latest projects, and technical skills primarily focused around Software Engineering, Machine Learning, Deep Learning, and Generative AI.
+## React Compiler
 
-### ✨ Features
-* **Interactive UI**: Built with a focus on modern web design, featuring smooth scrolling and dynamic interactions.
-* **Typing Animation**: A Hero section that showcases my core focus areas with a lively typing effect.
-* **Smooth Animations**: Powered by `framer-motion` for buttery smooth reveal effects and page transitions.
-* **Fully Responsive**: Carefully crafted with Tailwind CSS to look great on devices of all sizes (mobile, tablet, desktop).
-* **Project Showcase**: A dedicated section to highlight key projects with descriptions, tech stacks, and source links.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 🛠️ Built With
+## Expanding the ESLint configuration
 
-This project relies on the following cutting-edge technologies:
-
-* [![React][React.js]][React-url]
-* [![Vite][Vite.js]][Vite-url]
-* [![TailwindCSS][TailwindCSS]][TailwindCSS-url]
-* [![FramerMotion][FramerMotion]][FramerMotion-url]
-
-
-## 👤 Contact
-
-**Vidhan Tiwari** 
-- GitHub: [@vidhan-tiwari](https://github.com/vidhan-tiwari)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your_username_here) (Update this link)
-- Email: your.email@example.com (Update this email)
-
-Project Link: [https://github.com/vidhan-tiwari/Portfolio](https://github.com/vidhan-tiwari/Portfolio)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vite.js]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
-[Vite-url]: https://vitejs.dev/
-[TailwindCSS]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
-[TailwindCSS-url]: https://tailwindcss.com/
-[FramerMotion]: https://img.shields.io/badge/Framer--Motion-black?style=for-the-badge&logo=framer&logoColor=blue
-[FramerMotion-url]: https://www.framer.com/motion/
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
