@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/favicon.ico" alt="Logo" width="80" height="80" />
+  <img src="public/favicon.svg" alt="Logo" width="80" height="80" />
 
   <h1 align="center">Vidhan Tiwari - Personal Portfolio</h1>
 
