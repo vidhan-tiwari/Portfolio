@@ -13,6 +13,18 @@ function About() {
             >
                 About Me
             </motion.h2>
+            <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="text-gray-300 leading-8 max-w-3xl mx-auto mb-10"
+            >
+                I am an aspiring Software Engineer and ML Engineer passionate about building intelligent systems,
+                exploring Machine Learning and Deep Learning concepts, and turning ideas into interactive projects.
+                I enjoy combining strong fundamentals in programming, Data Science, and problem solving to create
+                practical and scalable systems.
+            </motion.p>
 
             <motion.h3 
                 initial={{ opacity: 0, y: 20 }}
